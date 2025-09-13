@@ -1254,58 +1254,54 @@ img {
     /* PENYESUAIAN BODY DAN TATA LETAK */
     body {
         display: block;
-        height: 100%;
-        padding: 0%;
-        margin: 0%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden; /* Mencegah scrolling horizontal */
     }
 
-    
     .scotch-container {
-        /* Adjust height for mobile view */
-        height: 960;
-        /* Ensure it fits within the viewport width */
-        width: 100vh;
-        /* Reset any specific positioning that might cause issues on small screens */
+        /* Mengatur ulang width agar sesuai dengan lebar viewport */
+        width: 100vw;
+        height: auto; /* Memungkinkan tinggi menyesuaikan konten */
         position: static;
-        
         background-size: cover;
         background-position: center;
-        /* You can remove or simplify the complex linear-gradient for better performance on mobile */
-        background-image: linear-gradient(
-            to bottom,
-            var(--dark-color),
-            var(--mid-dark)
-        );
-        /* Scale down the animation or adjust its properties for a smoother experience */
+        /* Menggabungkan tekstur noise dan linear-gradient */
+        background-image: var(--noise-texture),
+                          linear-gradient(
+                              to bottom,
+                              var(--dark-color),
+                              var(--mid-dark)
+                          );
+        background-blend-mode: overlay;
+        background-size: 150px, cover;
+        background-repeat: repeat, no-repeat;
         animation: none;
-        
     }
 
-    
     .text-sphere-container {
-        flex-direction: column; /* Mengubah tata letak flex menjadi kolom */
+        flex-direction: column;
         gap: 30px;
         padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
+    
     .text-container {
         right: 0;
-        position: static; /* Mengatur ulang posisi agar tidak ada offset */
+        position: static;
         width: 100%;
+        text-align: center;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     /* FONT DAN UKURAN TEKS */
-    .bakul {
-        font-size: 80px;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 20px;
-    }
+    .bakul { font-size: 80px; }
+    h1 { font-size: 40px; }
+    h2 { font-size: 14px; }
+    h3 { font-size: 20px; }
     p {
         width: 100%;
         padding: 0 10px;
@@ -1314,21 +1310,14 @@ img {
 
     /* NAVIGASI */
     nav {
-        transition: top 0.3s;
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 20px 0;
-        /* gap: 15px; */
+        gap: 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1000;
-    }
-    .show-nav {
-  top: 0; /* Tampilkan navbar kembali di posisi atas */
-}
-
-    a:not(.buy, .buy-cta, .learn) {
-        width: auto;
+        position: static;
     }
 
     /* CAROUSEL */
@@ -1341,27 +1330,24 @@ img {
         font-size: 30px;
         height: 30px;
         margin-top: -15px;
+        left: 5px;
+        right: 5px;
     }
-    .left-arrow { left: 5px; }
-    .right-arrow { right: 5px; }
-    .nav-dots-container {
-        bottom: 5px;
-    }
+    .nav-dots-container { bottom: 5px; }
 
     /* ABOUT SECTION */
     #about {
         padding: 2rem 1rem;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
     #about .items-wrapper {
-      padding: 40%;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(var(--itemWidth), 1fr));
+        padding: 0; /* Menghapus padding 40% yang bermasalah */
+        display: flex; /* Menggunakan Flexbox untuk tata letak vertikal */
+        flex-direction: column;
         gap: 1.5rem;
         width: 100%;
-        place-items: center;
+        align-items: center;
     }
     .item {
         --itemWidth: 130px;
@@ -1372,15 +1358,7 @@ img {
         height: 200px;
     }
 
-    #galery {
-      height: 100%;
-    }
-    #contact {
-        padding: 30px 15px;
-    }
-
-    #contact h2 {
-        font-size: 2rem;
-    }
+    #galery { height: auto; }
+    #contact { padding: 30px 15px; }
+    #contact h2 { font-size: 2rem; }
 }
-    
