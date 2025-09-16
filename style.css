@@ -2,7 +2,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/olde-english?styles=9553');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
+@import url(https://db.onlinewebfonts.com/c/527ea5851ca62a9a758a44dc39437eae?family=Old+English+Text+MT+V2);
                 
 :root {
   --dark-color: #191f1d;
@@ -39,7 +39,7 @@ body {
 
 .bakul {
   margin: 0;
-  font-family: "Old English Text MT", Blackletter, serif;                                    
+  font-family: "Old English Text MT V2";                                    
   font-weight: 150px;
   font-size: 150px;
   color: var(--light-color);
@@ -176,7 +176,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   position: absolute;
   background-image:var(--noise-texture);
   height: 580px;
-  width: 100;
+  width: 100px;
   mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 3;
@@ -1296,7 +1296,7 @@ img {
     /* FONT DAN UKURAN TEKS */
     .bakul {
         font-size: 80px;
-        font-family: "Old English Text MT", Blackletter, serif;  
+        font-family: "Old English Text MT V2", serif;  
     }
     h1 {
         font-size: 40px;
