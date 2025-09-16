@@ -1163,8 +1163,8 @@ a:hover:not(.buy, .buy-cta, .learn) {
 @media (max-width: 767px) {
   /* BODY */
   body {
-    display: block;
-    height: auto;
+    width: 100%;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
     overflow-x: hidden; /* cegah scroll horizontal */
@@ -1172,9 +1172,10 @@ a:hover:not(.buy, .buy-cta, .learn) {
 
   /* CONTAINER */
   .scotch-container {
+    display: grid;
     width: 100%; /* ganti dari 100vw biar aman */
+    min-height: 100vh;
     position: static;
-    background-size: cover;
     background-position: center;
     background-image: var(--noise-texture),
                       linear-gradient(to bottom, var(--dark-color), var(--mid-dark));
@@ -1301,4 +1302,8 @@ a:hover:not(.buy, .buy-cta, .learn) {
     font-size: 0.9rem;            /* perbaikan dari 0,9rem */
     padding: 12px 20px;
   }
+
+  * {
+  outline: 1px solid red;   /* buat cek elemen yang keluar layar */
+}
 }
