@@ -1158,166 +1158,147 @@ a:hover:not(.buy, .buy-cta, .learn) {
     background-color: #555a57;
 }
 
+
 /* MEDIA QUERY untuk Responsivitas */
 @media (max-width: 767px) {
-    /* PENYESUAIAN BODY DAN TATA LETAK */
-    body {
-        display: block;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden; /* Mencegah scrolling horizontal */
-    }
+  /* BODY */
+  body {
+    display: block;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* cegah scroll horizontal */
+  }
 
-    .scotch-container {
-        /* Mengatur ulang width agar sesuai dengan lebar viewport */
-        width: 100vw;
-        /* height: auto; Memungkinkan tinggi menyesuaikan konten */
-        position: static;
-        background-size: cover;
-        background-position: center;
-        /* Menggabungkan tekstur noise dan linear-gradient */
-        background-image: var(--noise-texture),
-                          linear-gradient(
-                              to bottom,
-                              var(--dark-color),
-                              var(--mid-dark)
-                          );
-        background-blend-mode: overlay;
-        background-size: 150px, cover;
-        background-repeat: repeat, no-repeat;
-        animation: none;
-    }
+  /* CONTAINER */
+  .scotch-container {
+    width: 100%; /* ganti dari 100vw biar aman */
+    position: static;
+    background-size: cover;
+    background-position: center;
+    background-image: var(--noise-texture),
+                      linear-gradient(to bottom, var(--dark-color), var(--mid-dark));
+    background-blend-mode: overlay;
+    background-size: 150px, cover;
+    background-repeat: repeat, no-repeat;
+    animation: none;
+  }
 
-    .text-sphere-container {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 10px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .text-container {
-        right: 0;
-        position: static;
-        width: 100%;
-        text-align: center;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
+  /* TEXT AREA */
+  .text-sphere-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .text-container {
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 
-    /* FONT DAN UKURAN TEKS */
+  /* FONT DAN TEKS */
+  .bakul {
+    font-size: 80px;
+    font-family: "Old English Text MT V2", serif;  
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 
-    .bakul {
-        font-size: 80px;
-        font-family: "Old English Text MT V2", serif;  
-    }
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 20px;
-    }
+  /* CTA BUTTON */
+  .buy-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    p {
-        width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
+  /* NAVIGASI */
+  nav {
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: static;
+  }
 
-    .buy-cta {
-          display: flex;
-        align-items: center;    /* Pemusatan vertikal */
-        justify-content: center; /* Pemusatan horizontal */
+  /* CAROUSEL */
+  .carousel-wrapper {
+    margin: 20px auto;
+    max-width: 95%;
+    box-shadow: none;
+  }
+  .left-arrow, .right-arrow {
+    font-size: 30px;
+    height: 30px;
+    margin-top: -15px;
+    left: 5px;
+    right: 5px;
+  }
+  .nav-dots-container { bottom: 5px; }
 
-    }
+  /* ABOUT SECTION */
+  #about {
+    padding: 2rem 1rem;
+    height: auto;
+    width: 100%;
+  }
+  #about .items-wrapper {
+    padding: 1rem;                /* ganti dari 25% */
+    display: flex;
+    flex-direction: column;       /* jadi berjejer ke bawah */
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;          /* center item */
+  }
+  .item {
+    --itemWidth: 130px;
+    --itemWidthMinus: -130px;
+    margin: 0 auto;               /* center item */
+  }
+  .imglog {
+    width: 200px;
+    height: 200px;
+  }
 
-    /* NAVIGASI */
-    nav {
-        /* flex-direction: column; */
-        align-items: center;
-        justify-content: center;
-<<<<<<< HEAD
-=======
-        margin: 20px 0;
->>>>>>> cd8b8185263cd2037105fe941f45b34407ca203f
-        margin: 15px 0;
-        gap: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        position: static;
-    }
-
-    /* CAROUSEL */
-    .carousel-wrapper {
-        margin: 20px auto;
-        max-width: 95%;
-        box-shadow: none;
-    }
-    .left-arrow, .right-arrow {
-        font-size: 30px;
-        height: 30px;
-        margin-top: -15px;
-        left: 5px;
-        right: 5px;
-    }
-    .nav-dots-container { bottom: 5px; }
-
-    /* ABOUT SECTION */
-    #about {
-        padding: 2rem 1rem;
-        height: auto;
-        width: 100%;
-    }
-    #about .items-wrapper {
-        padding: 25%; /* Menghapus padding 40% yang bermasalah */
-        display: flex; /* Menggunakan Flexbox untuk tata letak vertikal */
-        flex-direction: column;
-        gap: 1.5rem;
-        width: 100%;
-        align-items: center;
-    }
-    .item {
-        --itemWidth: 130px;
-        --itemWidthMinus: -130px;
-    }
-    .imglog {
-        width: 200px;
-        height: 200px;
-    }
-
-<<<<<<< HEAD
-    #contact {
-      width: 100%;
-      padding: 30px 15px;
-    }
-
-    #contact h1{
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    #contact form{
-      max-width: 100%;
-      gap: 12px;
-    }
-
-    #contact input,
-    #contact textarea {
-      font-size: 0.9rem; 
-      padding: 12px;
-    }
-
-    #contact button {
-      font-size: 0,9rem;
-      padding: 12px 20px;
-    }
-=======
-    #galery { height: auto; }
-    #contact { padding: 30px 15px; }
-    #contact h2 { font-size: 2rem; }
->>>>>>> cd8b8185263cd2037105fe941f45b34407ca203f
+  /* CONTACT SECTION */
+  #contact {
+    width: 100%;                  /* ganti dari 100vh */
+    padding: 30px 15px;
+  }
+  #contact h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  #contact form {
+    max-width: 100%;
+    gap: 12px;
+  }
+  #contact input,
+  #contact textarea {
+    font-size: 0.9rem;            /* pakai titik */
+    padding: 12px;
+  }
+  #contact button {
+    font-size: 0.9rem;            /* perbaikan dari 0,9rem */
+    padding: 12px 20px;
+  }
 }
