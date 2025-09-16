@@ -71,7 +71,7 @@ h3 {
 
 p {
   font-family: var(--mulish);
-  font-weight: 700;
+  font-weight: 700px;
   width: 390px;
   color: var(--mid-light);
 }
@@ -116,7 +116,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   display: grid;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
+  /* max-width: 100%; */
   position: relative;
   inset: 0; /* Menggunakan inset sebagai pengganti top, right, bottom, left */
   background: var(--dark-color);
@@ -125,7 +125,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   box-sizing: border-box;
   animation: spawn 2s ease-in-out forwards;
   z-index: 3;
-  background-size: 150px;
+  background-size: 50%;
   background-repeat: repeat; /* Ulangi gambar untuk menutupi seluruh area */
   background-blend-mode: overlay;
   background-image: linear-gradient(
@@ -176,7 +176,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   position: absolute;
   background-image:var(--noise-texture);
   height: 580px;
-  width: 960px;
+  width: 100;
   mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 3;
@@ -191,7 +191,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   top: 0;
   left: 0;
   height: 100vh; /* 100% tinggi viewport */
-  width: 100vw;  /* 100% lebar viewport */
+  width: 10vw;  /* 100% lebar viewport */
   background-image: var(--gif-texture);
   background-repeat: no-repeat;
   background-position: center;
@@ -1320,7 +1320,7 @@ img {
         align-items: center;
         justify-content: center;
         margin: 15px 0;
-        /* gap: 15px; */
+        gap: 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 1000;
     }
