@@ -226,7 +226,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 100px; /* Kontrol lebar maksimum untuk konten */
+  max-width: 1000px; /* Kontrol lebar maksimum untuk konten */
   padding: 0 20px; /* Tambahkan padding agar tidak terlalu mepet ke sisi */
 }
 
@@ -821,7 +821,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 100px;
+    max-width: 1000px;
     padding: 0 20px;
 }
 
@@ -1315,9 +1315,10 @@ img {
     }
 
     .buy-cta {
-      display: flex;
+          display: flex;
         align-items: center;    /* Pemusatan vertikal */
         justify-content: center; /* Pemusatan horizontal */
+
     }
 
     /* NAVIGASI */
