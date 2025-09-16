@@ -1240,6 +1240,10 @@ a:hover:not(.buy, .buy-cta, .learn) {
         /* flex-direction: column; */
         align-items: center;
         justify-content: center;
+<<<<<<< HEAD
+=======
+        margin: 20px 0;
+>>>>>>> cd8b8185263cd2037105fe941f45b34407ca203f
         margin: 15px 0;
         gap: 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -1285,6 +1289,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
         height: 200px;
     }
 
+<<<<<<< HEAD
     #contact {
       width: 100%;
       padding: 30px 15px;
@@ -1310,4 +1315,9 @@ a:hover:not(.buy, .buy-cta, .learn) {
       font-size: 0,9rem;
       padding: 12px 20px;
     }
+=======
+    #galery { height: auto; }
+    #contact { padding: 30px 15px; }
+    #contact h2 { font-size: 2rem; }
+>>>>>>> cd8b8185263cd2037105fe941f45b34407ca203f
 }
