@@ -637,7 +637,7 @@ body {
     background: var(--dark-color);
     background-image: var(--noise-texture);
     background-blend-mode: overlay;
-    background-size: auto;
+    background-size: cover;
 }
 
 .bakul {
