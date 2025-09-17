@@ -1177,13 +1177,13 @@ a:hover:not(.buy, .buy-cta, .learn) {
     min-height: 100vh;
     position: static;
     background-position: center;
-    background-image: var(--noise-texture),
-                      linear-gradient(to bottom, var(--dark-color), var(--mid-dark));
     background-blend-mode: overlay;
-    background-size: 150px, cover;
+    background-size: auto;
     background-repeat: repeat, no-repeat;
     animation: none;
+    z-index:9999;
   }
+
 
   /* TEXT AREA */
   .text-sphere-container {
@@ -1215,6 +1215,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   }
   h3 {
     font-size: 20px;
+    margin-bottom: 100;
   }
   p {
     width: 100%;
@@ -1234,7 +1235,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   nav {
     align-items: center;
     justify-content: center;
-    margin: 15px 0;
+    margin: 1px 0;
     gap: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
