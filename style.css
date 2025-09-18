@@ -1176,14 +1176,14 @@ a:hover:not(.buy, .buy-cta, .learn) {
     display: grid;
     width: 100%; /* ganti dari 100vw biar aman */
     min-height: 100vh;
-    position: fixed;
+    position: relative;
     background-position: center;
     background-blend-mode: overlay;
     background-size: auto;
     background-repeat: repeat, no-repeat;
     animation: none;
     z-index:9999;
-  }
+  } 
 
 
   /* TEXT AREA */
