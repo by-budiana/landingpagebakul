@@ -115,7 +115,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   padding: 0;
   display: grid;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   /* max-width: 100%; */
   position: relative;
   inset: 0; /* Menggunakan inset sebagai pengganti top, right, bottom, left */
