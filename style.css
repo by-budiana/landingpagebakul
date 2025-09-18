@@ -207,7 +207,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   margin: auto;
   display: grid;
   height: 100%;
-  gap: 64px;
+  /* gap: 64px; */
   place-items: center;
   box-sizing: border-box;
   width: 100%;
