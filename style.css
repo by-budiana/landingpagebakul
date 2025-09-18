@@ -1177,6 +1177,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
     width: 100%; /* ganti dari 100vw biar aman */
     min-height: 100vh;
     position: relative;
+    padding: 1;
     background-position: center;
     background-blend-mode: overlay;
     background-size: auto;
