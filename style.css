@@ -1166,7 +1166,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   body {
     width: 100%;
     min-height: 100vh;
-    padding: 0;
+    padding: 5;
     margin: 0;
     overflow-x: hidden; /* cegah scroll horizontal */
   }
