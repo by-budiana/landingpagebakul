@@ -1,75 +1,88 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=1.0"
+    />
     <title>BAKUL</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="scotch-container">
+      <nav class="navbar">
+        <a href="#contact">CONTACT</a>
+        <a href="#about">ABOUT</a>
+        <a href="#galery">GALERY</a>
+        <a href="#" class="buy" target="_blank  ">BUY NOW</a>
+      </nav>
+      <article class="main-container">
+        <div class="text-sphere-container">
+          <hgroup class="text-container">
+            <h1 class="bakul">BakuL</h1>
+            <h2>Drink Hoax and rock n roll</h2>
+            <h3>since 2018</h3>
+            <p>
+              Pemuda semakin malam semakin pintar, selain panggilan mabuk pemuda
+              sibuk
+            </p>
+            <a href="#" class="buy-cta" target="_blank">Donasi Mabuk</a>
+          </hgroup>
+          <img class="imglog" src="/img/bakul.jpg" />
+        </div>
+        <footer class="learn-arrow">
+          <div class="learn">LEARN MORE</div>
+          <div class="arrow">🢓</div>
+        </footer>
+      </article>
+    </section>
 
-<section class="scotch-container">
-  <nav class="navbar">
-    <a href="#contact">CONTACT</a>
-    <a href="#about">ABOUT</a>
-    <a href="#galery">GALERY</a>
-    <a href="#" class="buy" target="_blank  ">BUY NOW</a>
-  </nav>
-  <article class="main-container">
-    <div class="text-sphere-container">
-      <hgroup class="text-container">
-        <h1 class="bakul">BakuL</h1>
-        <h2>Drink Hoax and rock n roll</h2>
-        <h3>since 2018</h3>
-        <p>Pemuda semakin malam semakin pintar, selain panggilan mabuk pemuda sibuk</p>
-        <a href="#" class="buy-cta" target="_blank">Donasi Mabuk</a>
-      </hgroup>
-        <img class="imglog" src="/img/bakul.jpg">
-    </div>
-    <footer class="learn-arrow">
-      <div class="learn">LEARN MORE</div>
-      <div class="arrow">🢓</div>
-    </footer>
-  </article>
-</section>
+    <section id="about">
+      <h1 class="h1-override">ABOUT</h1>
+      <h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+        repellat fugiat aliquam facilis assumenda provident molestiae voluptatum
+        dolor, quam doloremque ullam tenetur cumque nihil vel neque consequuntur
+        quidem voluptatem et!
+      </h3>
+      <div class="items-wrapper">
+        <div class="item"><span>The New York Times</span></div>
+        <div class="item"><span>The Washington Post</span></div>
+        <div class="item"><span>Los Angeles Times</span></div>
+      </div>
+    </section>
 
-<section id="about">
-    <h1 class="h1-override">ABOUT</h1>
-    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellat fugiat aliquam facilis assumenda provident molestiae voluptatum dolor, quam doloremque ullam tenetur cumque nihil vel neque consequuntur quidem voluptatem et!</h3>
-	<div class="items-wrapper">
-    <div class=item><span>The New York Times</span></div>
-	<div class=item><span>The Washington Post</span></div>
-	<div class=item><span>Los Angeles Times</span></div>
-    </div>
-</section>
+    <section class="container-galery">
+      <h1>GALERY</h1>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="/img/bakul 1.jpg" alt="bakul" />
+          <img id="slide-2" src="/img/bakul 1.jpg" alt="bakul" />
+          <img id="slide-3" src="/img/bakul 1.jpg" alt="bakul" />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
 
-<section class="container-galery">
-  <h1>GALERY</h1>
-	<div class="slider-wrapper">
-		<div class="slider">
-			<img id="slide-1" src="/img/bakul 1.jpg" alt="bakul" />
-			<img id="slide-2" src="/img/bakul 1.jpg" alt="bakul" />
-			<img id="slide-3" src="/img/bakul 1.jpg" alt="bakul" />
-		</div>
-		<div class="slider-nav">
-			<a href="#slide-1"></a>
-			<a href="#slide-2"></a>
-			<a href="#slide-3"></a>
-		</div>
-	</div>
-</section>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-<section id="contact">
-  <h1>Contact Us</h1>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
 </html>

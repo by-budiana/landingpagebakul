@@ -191,7 +191,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
   top: 0;
   left: 0;
   height: 100vh; /* 100% tinggi viewport */
-  width: 10vw;  /* 100% lebar viewport */
+  width: 10ovw;  /* 100% lebar viewport */
   background-image: var(--gif-texture);
   background-repeat: no-repeat;
   background-position: center;
@@ -1065,8 +1065,8 @@ a:hover:not(.buy, .buy-cta, .learn) {
 	scroll-behavior: smooth;
 	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 	border-radius: 0.5rem;
-	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-	scrollbar-width: none; /* Hide scrollbar Firefox */
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1176,7 +1176,7 @@ a:hover:not(.buy, .buy-cta, .learn) {
     display: grid;
     width: 100%; /* ganti dari 100vw biar aman */
     min-height: 100vh;
-    position: fixed;
+    position: relative;
     background-position: center;
     background-blend-mode: overlay;
     background-size: auto;
